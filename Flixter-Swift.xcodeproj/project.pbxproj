@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		14B6F6CD4FCA370E27017EEA /* Pods_Flixter_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEA65E464C33FBD6A3E981 /* Pods_Flixter_Swift.framework */; };
+		41003FB727D2734400CC70FB /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41003FB627D2734400CC70FB /* MovieCell.swift */; };
+		41003FBA27D2D40400CC70FB /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 41003FB927D2D40400CC70FB /* AlamofireImage */; };
 		4177435327C97D0F00176528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177435227C97D0F00176528 /* AppDelegate.swift */; };
 		4177435527C97D0F00176528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177435427C97D0F00176528 /* SceneDelegate.swift */; };
 		4177435727C97D0F00176528 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177435627C97D0F00176528 /* MoviesViewController.swift */; };
@@ -17,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41003FB627D2734400CC70FB /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		4177434F27C97D0F00176528 /* Flixter-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flixter-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4177435227C97D0F00176528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4177435427C97D0F00176528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B6F6CD4FCA370E27017EEA /* Pods_Flixter_Swift.framework in Frameworks */,
+				41003FBA27D2D40400CC70FB /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +74,7 @@
 				4177435B27C97D1200176528 /* Assets.xcassets */,
 				4177435D27C97D1200176528 /* LaunchScreen.storyboard */,
 				4177436027C97D1200176528 /* Info.plist */,
+				41003FB627D2734400CC70FB /* MovieCell.swift */,
 			);
 			path = "Flixter-Swift";
 			sourceTree = "<group>";
@@ -109,6 +114,9 @@
 			dependencies = (
 			);
 			name = "Flixter-Swift";
+			packageProductDependencies = (
+				41003FB927D2D40400CC70FB /* AlamofireImage */,
+			);
 			productName = "Flixter-Swift";
 			productReference = 4177434F27C97D0F00176528 /* Flixter-Swift.app */;
 			productType = "com.apple.product-type.application";
@@ -137,6 +145,9 @@
 				Base,
 			);
 			mainGroup = 4177434627C97D0F00176528;
+			packageReferences = (
+				41003FB827D2D40400CC70FB /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 4177435027C97D0F00176528 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -208,6 +219,7 @@
 			files = (
 				4177435727C97D0F00176528 /* MoviesViewController.swift in Sources */,
 				4177435327C97D0F00176528 /* AppDelegate.swift in Sources */,
+				41003FB727D2734400CC70FB /* MovieCell.swift in Sources */,
 				4177435527C97D0F00176528 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +442,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		41003FB827D2D40400CC70FB /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		41003FB927D2D40400CC70FB /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41003FB827D2D40400CC70FB /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4177434727C97D0F00176528 /* Project object */;
 }
